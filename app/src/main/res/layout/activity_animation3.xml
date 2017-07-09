@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.josecuentas.android_animations.Animation3Activity"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/button_showkeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="show keyboard"
+            />
+
+        <Button
+            android:id="@+id/button_hidekeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hide keyboard"
+            android:layout_below="@+id/button_showkeyboard"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_alignBottom="@id/content"
+        >
+
+        <ImageView
+            android:id="@+id/imageview_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:src="@mipmap/ic_keyboard"
+            android:scaleType="fitXY"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
