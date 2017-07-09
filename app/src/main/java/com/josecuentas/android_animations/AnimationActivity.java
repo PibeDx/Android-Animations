@@ -6,6 +6,7 @@ import android.support.constraint.ConstraintSet;
 import android.support.transition.TransitionManager;
 import android.support.v7.app.AppCompatActivity;
 
+import android.support.v7.view.ViewPropertyAnimatorCompatSet;
 import android.view.View;
 import android.widget.Button;
 
@@ -16,6 +17,7 @@ import android.widget.Button;
 public class AnimationActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button mButApply, mButReset;
+    private Button mButton;
     private ConstraintLayout mConstraintLayout;
     private ConstraintSet mApplyConstraintSet = new ConstraintSet();
     private ConstraintSet mResetConstraintSet = new ConstraintSet();
@@ -30,6 +32,7 @@ public class AnimationActivity extends AppCompatActivity implements View.OnClick
         mButApply = (Button) findViewById(R.id.butApply);
         mButReset = (Button) findViewById(R.id.butReset);
         mView = findViewById(R.id.button);
+        mButton = (Button) findViewById(R.id.button2);
 
         mResetConstraintSet.clone(mConstraintLayout);
         mApplyConstraintSet.clone(mConstraintLayout );
