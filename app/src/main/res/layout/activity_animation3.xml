@@ -49,6 +49,14 @@
             android:scaleType="fitXY"
             />
 
+        <View
+            android:id="@+id/view_keyboard_bar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@android:color/background_dark"
+            android:layout_alignParentTop="true"
+            />
+
     </RelativeLayout>
 
 </RelativeLayout>
